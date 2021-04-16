@@ -4,12 +4,12 @@ import Layout from "../components/layout/Layout";
 import FooterTag from "../components/layout/FooterTag";
 import Modal1 from "../components/componentes/Modal1";
 
-export default function Home() {
+export default function DynamicCode() {
   return (
     <Fragment>
       <Layout>
-        <div className="">
-          <Modal1/>
+        <div>
+            <Modal1/>
         </div>
         <FooterTag/>
       </Layout>
