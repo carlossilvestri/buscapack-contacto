@@ -13,7 +13,9 @@ app.prepare().then(() => {
     // This tells it to parse the query portion of the URL.
     const parsedUrl = parse(req.url, true)
     const { pathname, query } = parsedUrl
-
+    console.log("parsedUrl ", parsedUrl);
+    console.log("pathname ", pathname);
+    console.log("query ", query);
     if (pathname === '/a') {
       app.render(req, res, '/a', query)
     } else if (pathname === '/b') {
@@ -21,8 +23,8 @@ app.prepare().then(() => {
     } else {
       handle(req, res, parsedUrl)
     }
-  }).listen(80, (err) => {
+  }).listen(3000, (err) => {
     if (err) throw err
-    console.log('> Ready on http://localhost:80')
+    console.log('> Ready on http://localhost:3000')
   })
 })
