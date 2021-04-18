@@ -59,6 +59,8 @@ const Modal1 = () => {
       setphaseOne(false);
     } else {
       setphaseOne(true);
+      setphaseTwo(false);
+      setphaseThree(false);
     }
   };
   // Permite mostrar el boton de llamar
@@ -162,7 +164,7 @@ const Modal1 = () => {
                   <button
                     className="btn-vale-dashboard1 animate__animated animate__fadeIn"
                     style={{ width: "200px" }}
-                    onClick={togglePhaseThree}
+                    onClick={togglePhaseOne}
                   >
                     Sí
                   </button>
@@ -171,7 +173,7 @@ const Modal1 = () => {
                   <button
                     className="btn-vale-dashboard1 animate__animated animate__fadeIn"
                     style={{ width: "200px" }}
-                    onClick={togglePhaseThree}
+                    onClick={togglePhaseOne}
                   >
                     No
                   </button>
