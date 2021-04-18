@@ -54,7 +54,7 @@ const Modal1 = () => {
     }
   };
   const togglePhaseOne = () => {
-    console.log("Diste click. Dentro de togglePhaseOne");
+    // console.log("Diste click. Dentro de togglePhaseOne");
     if (phaseOne) {
       setphaseOne(false);
     } else {
@@ -164,7 +164,7 @@ const Modal1 = () => {
                     style={{ width: "200px" }}
                     onClick={togglePhaseThree}
                   >
-                    Si
+                    Sí
                   </button>
                 ) : null}
                 {phaseTwo && imgPorDefecto.length > 0 ? (
