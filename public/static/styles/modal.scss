@@ -32,6 +32,7 @@
         }
         .title-vale1 {
           margin-bottom: 25px;
+          margin-top: 20px;
           @media (max-width: 1125px) {
             font-size: 27px;
           }
@@ -109,7 +110,8 @@
   }
 }
 .text-descriptivo {
-  color: #2a2a2a;
+  /* color: #2a2a2a;*/
+  color: #bdbdbd;
   font-family: "Nunito Sans", Sans-serif;
   font-size: 12px;
   font-weight: 400;

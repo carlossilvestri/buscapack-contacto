@@ -34,8 +34,8 @@ const Modal1 = () => {
             console.log("nombreCompany ", nombreCompany);
             */
             setImgPorDefecto(companies[i].courier_logo);
-            setphaseOne(false);
-            setphaseTwo(true);
+            setphaseOne(true);
+            setphaseTwo(false);
             setphaseThree(false);
           }
         }
@@ -109,14 +109,13 @@ const Modal1 = () => {
                   </h3>
                 ) : null}
                 {phaseOne ? (
-                  <a
+                  <button
                     className="btn-vale-dashboard1 animate__animated animate__fadeIn"
                     style={{ width: "200px" }}
-                    href="https://buscapack.es/"
-                    target="_blank" rel="noopener noreferrer"
+                    onClick={togglePhaseThree}
                   >
                     Localizar un envío
-                  </a>
+                  </button>
                 ) : null}
                 {phaseOne ? (
                   <button
@@ -181,6 +180,11 @@ const Modal1 = () => {
                 
                 {/* Fin Fase 2. */}
                 {/* Start Fase 3. */}
+                {phaseThree ? (
+                  <h3 className="title-vale1 animate__animated animate__fadeIn" style={{ fontSize: '28px' }}>
+                    Información recogida, pulse para ser atendido.
+                  </h3>
+                ) : null}
                 {/* Start Img de la compania. */}
                 {phaseThree && imgPorDefecto.length > 0 ? (
                   <img
